@@ -1,0 +1,86 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1540458638618-893e9fb35c07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(45deg, rgb(229, 121, 121), #aaa);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__header,
+.card__footer {
+    grid-column: span 2;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.card__subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    font-weight: 200;
+}
+
+.card__temp {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.card__info {
+    margin-top: 35px;
+}
+
+.card__item {
+    font-size: 1.0rem;
+    margin-top: 3px;
+}
+
+.card__description {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card__footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.card__btn {
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #1a1a1a;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(210, 201, 201), rgb(141, 132, 132));
+    transition: transform 100ms ease;
+}
+
+.card__btn:hover {
+    transform: scale(1.05);
+    background: rgb(230, 102, 102);
+}
+
+.card__btn:active {
+    transform: scale(1);
+    box-shadow: 1px 1px 5px;
+}
